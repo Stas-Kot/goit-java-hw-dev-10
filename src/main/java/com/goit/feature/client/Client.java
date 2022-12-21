@@ -1,18 +1,16 @@
 package com.goit.feature.client;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
 
 @Table(name = "client")
 @Entity
 @Data
 public class Client {
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     private long id;
 
-    @Column
+    @Column(nullable = false, length = 200)
     private String name;
 }

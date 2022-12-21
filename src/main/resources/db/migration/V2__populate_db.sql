@@ -16,16 +16,16 @@ INSERT INTO planet (id, name) VALUES
 ('SATURN', 'Saturn'),
 ('VEN', 'Venus'),
 ('ANDRO', 'Andromedae'),
-('KEPLER-452', 'Kepler452');
+('KEPLER452', 'Kepler452');
 
 INSERT INTO ticket (client_id, from_planet_id, to_planet_id) VALUES
 (1, 'MARS', 'JUPI'),
-(2, 'SATURN', 'KEPLER-452'),
-(3, 'ANDRO', 'KEPLER-452'),
+(2, 'SATURN', 'KEPLER452'),
+(3, 'ANDRO', 'KEPLER452'),
 (4, 'JUPI', 'MARS'),
-(5, 'VEN', 'KEPLER-452'),
+(5, 'VEN', 'KEPLER452'),
 (6, 'SATURN', 'JUPI'),
-(6, 'VEN', 'MARS'),
+(7, 'VEN', 'MARS'),
 (8, 'JUPI', 'SATURN'),
 (9, 'VEN', 'ANDRO'),
 (10, 'SATURN', 'JUPI'),

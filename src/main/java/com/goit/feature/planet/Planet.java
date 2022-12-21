@@ -13,6 +13,6 @@ public class Planet {
     @Id
     private String id;
 
-    @Column
+    @Column(nullable = false, length = 200)
     private String name;
 }
