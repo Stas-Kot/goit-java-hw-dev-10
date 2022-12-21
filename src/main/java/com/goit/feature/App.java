@@ -2,7 +2,6 @@ package com.goit.feature;
 
 import com.goit.feature.client.Client;
 import com.goit.feature.client.ClientCrudService;
-import com.goit.feature.database.Database;
 import com.goit.feature.database.DatabaseInitService;
 import com.goit.feature.database.hibernate.HibernateUtil;
 import com.goit.feature.planet.Planet;
@@ -31,8 +30,8 @@ public class App {
 //
 //        clientCrudService.deleteById(11);
 //
-//        List<Client> clientsAfter = clientCrudService.getAll();
-//        System.out.println("clientsAfter = " + clientsAfter);
+        List<Client> clientsAfter = clientCrudService.getAll();
+        System.out.println("clientsAfter = " + clientsAfter);
 
 //        planetCrudService.create("NEP5", "Neptun");
 
